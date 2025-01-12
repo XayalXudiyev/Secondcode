@@ -43,18 +43,18 @@ export default function RegisterPage() {
       // Check if user already exists
       const userExists = await checkExistingUser(data.email)
       
-      if (userExists) {
-        message.info('An account with this email already exists. Please sign in.')
-        router.push(`/login?email=${encodeURIComponent(data.email)}`)
-        return
-      }
+      // if (userExists) {
+      //   message.info('An account with this email already exists. Please sign in.')
+      //   router.push(`/login?email=${encodeURIComponent(data.email)}`)
+      //   return
+      // }
 
       // Here you would make your API call to register
       // const response = await registerUser(data)
       console.log('Registration data:', data)
       
       message.success('Registration successful! Please log in.')
-      router.push('/login')
+      // router.push('/login')
     } catch (error) {
       message.error('Registration failed. Please try again.')
       console.error('Registration error:', error)
@@ -72,9 +72,9 @@ export default function RegisterPage() {
         message.info(
           <span>
             An account with this email already exists.{' '}
-            <Link href={`/login?email=${encodeURIComponent(email)}`} className="text-emerald-600 hover:text-emerald-700">
+            {/* <Link href={`/login?email=${encodeURIComponent(email)}`} className="text-emerald-600 hover:text-emerald-700">
               Sign in instead
-            </Link>
+            </Link> */}
           </span>
         )
       }
