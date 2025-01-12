@@ -1,0 +1,77 @@
+seconcode/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   ├── register/
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   ├── (dashboard)/
+│   │   ├── challenges/
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── leaderboard/
+│   │   │   └── page.tsx
+│   │   ├── profile/
+│   │   │   └── page.tsx
+│   │   ├── resources/
+│   │   │   └── page.tsx
+│   │   ├── forum/
+│   │   │   ├── [id]/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   ├── admin/
+│   │   ├── challenges/
+│   │   │   └── page.tsx
+│   │   ├── users/
+│   │   │   └── page.tsx
+│   │   ├── analytics/
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   ├── api/
+│   │   ├── auth/
+│   │   │   └── [...nextauth]/
+│   │   │       └── route.ts
+│   │   ├── challenges/
+│   │   │   └── route.ts
+│   │   └── users/
+│   │       └── route.ts
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── Input.tsx
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Sidebar.tsx
+│   │   └── features/
+│   │       ├── challenges/
+│   │       ├── forum/
+│   │       └── leaderboard/
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   └── useTheme.ts
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   └── constants.ts
+│   ├── store/
+│   │   ├── api/
+│   │   │   └── apiSlice.ts
+│   │   └── store.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── styles/
+│   │   └── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   ├── images/
+│   └── icons/
+├── .env
+├── .env.local
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json 
